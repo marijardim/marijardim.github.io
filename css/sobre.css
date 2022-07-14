@@ -1,0 +1,63 @@
+
+.conteudo-bg{
+  position: relative;
+  background-color: var(--rosa-2);
+  padding: 0px 0 80px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, .4);
+  margin: 0 auto;
+}
+.sobre .titulo{
+  padding-top: 120px;
+}
+.titulo{
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2.5rem;
+  color: var(--roxo-1);
+  padding-top: 80px;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.titulo:after{
+  content: "";
+  display: block;
+  width: 40%;
+  height: 4px;
+  position: absolute;
+  background-color: var(--rosa-1) ;
+  margin-left: 25%;
+  margin-top: 4px;
+}
+.container-sobre{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.texto-box{
+  padding: 20px;
+  width: 300px;
+  border: 2px solid var(--roxo-1);
+  box-shadow: 2px -2px 0 0px var(--roxo-1) ;
+}
+.texto-box .subtitulo{
+  font-size: 1.5rem;
+  font-family: 'Comfortaa', sans-serif;
+  padding: 20px;
+  color: var(--roxo-1);
+}
+.texto-box p{
+  padding: 10px;
+  text-align: left;
+}
+.texto-box p, .flipbox-back p{
+  color: var(--roxo-1);
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}

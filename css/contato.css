@@ -1,0 +1,44 @@
+.contato-bg{
+  background-color: var(--bg-roxo);
+  box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, .4);
+}
+
+.contato{
+  color: var(--rosa-1);
+  font-family: 'Roboto', sans-serif;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+
+}
+.contato .subtitulo{
+  padding-bottom: 8px;
+  color: var(--rosa-1);
+  background: none;
+}
+.contato p{
+  margin-bottom: 16px;
+}
+.redes{
+  margin-bottom: 40px;
+}
+.redes h3{
+  margin: 24px 0;
+}
+.redes-lista{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.redes-lista img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.redes-lista img:hover,.email:hover{
+opacity: .8;
+}
+.email{
+  color: var(--rosa-1);
+  font-size: .875rem;
+}

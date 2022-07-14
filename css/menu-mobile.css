@@ -1,0 +1,45 @@
+[data-menu="button"]{
+  display: none;
+}
+
+@media (max-width: 700px){
+  .js [data-menu="button"]{
+  display: flex;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  
+}
+.js #menu{
+  display: none;
+}
+@keyframes show-down {
+  from{
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+  .js #menu.active{
+  display: block;
+  animation: show-down .3s forwards;
+  position: absolute;
+  background: var(--rosa-2);
+  width: 160px;
+  z-index: 200;
+  top: 0;
+  padding: 20px 0px 20px 0px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 80px;
+}
+.js .menu-btn{
+  transition: all .9s;
+
+}
+.js .menu-btn.active{
+transform: rotate3d(0, 0, 1, 180deg);
+}
+}

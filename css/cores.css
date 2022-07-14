@@ -1,0 +1,8 @@
+:root{
+  --bg-grad: linear-gradient(90deg, #B983FF 0%, #D47AE8 80%);
+  --bg-grad-2: linear-gradient(90deg, #FFDEDE, #F4BEEE);
+  --bg-roxo: #2E0249;
+  --rosa-1: #F4BEEE;
+  --rosa-2: #FDEFF4;
+  --roxo-1: #581d8f;
+}

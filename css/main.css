@@ -1,0 +1,162 @@
+.logo-container{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.logo{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 3px solid var(--rosa-2);
+  border-radius: 22px;
+  padding: 6px 8px;
+  line-height: .5;
+  color: var(--rosa-2);
+  position: relative;
+
+}
+.logo::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  align-self: center;
+  background-color: var(--rosa-2);
+  left: 60px;
+  top: 0;
+  cursor: default;
+  }
+  .logo:hover{
+    color: var(--roxo-1);
+    border-color: var(--roxo-1);
+  }
+.marca{
+  font-family: 'Unica One', cursive;
+  color: var(--rosa-2);
+  font-size: 2rem;
+  margin-left: 32px;
+}
+.marca:hover{
+  color: var(--roxo-1);
+  border-color: var(--roxo-1);
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 40px 40px;
+  margin: 0 auto;
+  top:0;
+  right: 0;
+  left: 0;
+}
+.menu.active{
+  padding: 20px 40px;
+  transition: all .4s;
+  background: var(--bg-grad);
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.nav img{
+  cursor: pointer;
+  border: 2px solid var(--roxo-1);
+  padding: 5px 8px;
+} 
+.nav{
+  display: flex;
+  font-family: 'Comfortaa', cursive;
+  align-items: center;
+}
+.nav-bar{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.nav-bar a{
+  padding: 8px 4px;
+  margin-left: 42px;
+  color: var(--roxo-1);
+  display: inline-block;
+  position: relative;
+}
+@media(max-width: 860px){
+  .nav-bar a{
+    margin-left: 22px;
+  }
+}
+.nav-bar a:hover{
+  font-weight: bold;
+}
+
+.nav-bar a::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: var(--roxo-1);
+  margin-top: 4px;
+}
+.nav-bar a:hover::after{
+  width: 90%;
+  transition: .3s;
+  background-color: var(--roxo-1);
+}
+.btn-curriculo{
+  font-size: 1rem;
+  color: var(--rosa-1);
+  border: 2px solid var(--rosa-1);
+  padding: 8px 16px;
+  margin-left: 16px;
+}
+.btn-curriculo:hover{
+  color: var(--roxo-1);
+  border-color: var(--roxo-1);
+  transition: .4s;
+}
+.main{
+  text-align: center;
+  padding: 278px 0 250px;
+  color: #fff;
+}
+.nome{
+  font-family: 'Unica One', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 12px 0 9px;
+  position: relative;
+  color: var(--rosa-2);
+  text-shadow: -4px 0 #2E0249, 0 1px #2E0249, 1px 0 #2E0249, 0 -1px #2E0249;
+}
+
+.nome::before{
+  content:"Olá, meu nome é";
+  display: block;
+  position: absolute;
+  font-family: 'Allura', cursive;
+  transform: rotate(-20deg);
+  font-size: 1.4rem;
+  padding: 0 20px;
+  top: -20px;
+  left: calc(50% - 250px);
+  text-shadow: none;
+}
+@media (max-width: 600px){
+  .nome{
+    font-size: 3rem;
+  }
+  .nome::before{
+   margin-left: 50px;
+  }
+}
+.main span{
+ font-family: 'Roboto', sans-serif;
+ color: var(--rosa-2);
+ max-width: 300px;
+}
